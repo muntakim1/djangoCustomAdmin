@@ -1,0 +1,14 @@
+{% extends "admin/base.html" %}
+{% load static%}
+{% block title %} Muntakim | Muntakim site admin {% endblock %}
+{% block extrastyle %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+{% endblock %}
+
+
+{% block branding %}
+
+<h1 id="site-name"><a class="navbar-brand" href="{% url 'admin:index' %}">Administration</a></h1>
+{% endblock %}
+
+{% block nav-global %}{% endblock %}
